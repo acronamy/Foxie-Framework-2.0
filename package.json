@@ -1,0 +1,11 @@
+{
+  "name": "foxie-framework",
+  "version": "1.0.0",
+  "description": "Foxie framework is the Stylus css & js framework used by foxie cms, It was designed to works great as a standalone framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Crockett",
+  "license": "ISC"
+}
