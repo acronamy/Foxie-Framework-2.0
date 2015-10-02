@@ -1,4 +1,4 @@
-//Based on load json settings, create directories and files required by foxie-framework, you can add more files via the load json files.
+//Based on load json settings, create directories and files required by kitsune, you can add more files via the load json files.
 var fs = require('fs'),
 		api = require("../developer/api/api_index.js"),
 		__root = api.core.getRoot,
@@ -23,7 +23,7 @@ function make_install_dir(cb){
 }
 
 function install_components(changes){
-	var mainStylIndex = path.join(__root,"foxie_framework_index.styl")//Update main file
+	var mainStylIndex = path.join(__root,"kitsune.styl")//Update main file
 	if(!changes) var install_dir = api.core.componentList
 	else var install_dir = changes
 	for(i in install_dir){

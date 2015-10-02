@@ -5,7 +5,7 @@
 
 
 # Api
-Access foxie-framework api to make development easier.
+Access Kitsune api to make development easier.
 
 ## Contents
 
@@ -16,7 +16,7 @@ Access foxie-framework api to make development easier.
 ## 1.0 Construct
 
 ###alias.js
-Alias is an interpolation method Foxie uses for contructing files that a component requires, a schema can be loaded as the second peramiter via the api.core.componentSchema.js
+Alias is an interpolation method Kitsune uses for contructing files that a component requires, a schema can be loaded as the second peramiter via the api.core.componentSchema.js
 
 Syntax:
 ```
@@ -33,6 +33,5 @@ Returns a boolean based on the settings for features in load.json, performing ac
 ####componentList.js
 Return an array of all components that should be loaded into your build.
 
-
 ####componentSchema.js - [function] - peram or no peram
-Return the entire list of current component schema which foxie uses to install components against. Nameing conventions are very important and so is your document workflow, frameworks should work with you and not make you learn a new convention.
+Return the entire list of current component schema which Kitsune uses to install components against. Nameing conventions are very important and so is your document workflow, frameworks should work with you and not make you learn a new convention.

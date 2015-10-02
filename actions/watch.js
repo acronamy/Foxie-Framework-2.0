@@ -3,12 +3,19 @@ var watcher = require("chokidar"),
 		__root = api.core.getRoot,
 		path = require("path"),
 		fs = require("fs"),
-		color = require("colors")
+		color = require("colors"),
+		mainJson = require(path.join(__root,"package.json"))
 
 var load_settings = path.join(__root,"load.json")
 
 module.exports = function(){
-	console.log(color.magenta("Foxie is now keeping an eye on things."))
+	var features = require(load_settings).features
+	console.log("==================")
+	for(i in features){
+		console.log(color.grey(i+":"),features[i])
+	}
+	console.log("==================")
+	console.log(color.cyan(mainJson.name,"is keeping an eye on things!"))
 	watcher.watch(load_settings)
 		.on('change',watch_load_json)
 	watcher.watch(api.core.getPath("src"))

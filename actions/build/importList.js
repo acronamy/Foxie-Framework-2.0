@@ -2,7 +2,7 @@ var path = require("path"),
 		api = require("../../developer/api/api_index.js"),
 		fs = require("fs")
 
-var mainStyleIndexPath = api.core.getPath("foxie_style")
+var mainStyleIndexPath = api.core.getPath("kitsune_style")
 
 //"@import '../components/'"
 var tmpArr = []

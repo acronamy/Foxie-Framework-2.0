@@ -12,7 +12,7 @@
 		"reset",
 		"tables",
 		"typography",
-		"utility"
+		"_utility"
 	],
 	"convention_schema":{
 		"component":{
@@ -43,6 +43,6 @@
 		"dist":"./dist",
 		"src":"./components",
 		"core":"./core",
-		"foxie_style":"./core/foxie_framework.styl"
+		"kitsune_style":"./core/kitsune.styl"
 	}
 }
